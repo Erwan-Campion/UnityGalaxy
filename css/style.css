@@ -9,11 +9,18 @@ body {
 
 }
 
+img{
+    display: block;
+   justify-content: center;
+   margin : auto;
+   width : 70%;
+   min-width: 300px;
+   border-radius: 5px;
+}
+
 div{
-    display: flex;
     margin : auto;
     justify-content: center;
-    align-items:  flex-start;
 }
 
 nav{
