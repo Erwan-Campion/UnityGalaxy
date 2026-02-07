@@ -9,6 +9,10 @@ body {
 
 }
 
+p.signature{
+    text-align: right;
+}
+
 img{
     display: block;
    justify-content: center;
@@ -17,6 +21,8 @@ img{
    min-width: 300px;
    border-radius: 5px;
 }
+
+
 
 div{
     margin : auto;

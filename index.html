@@ -52,9 +52,13 @@
                 <img src="images/quaternion_bug.gif" alt="">
                 <p><em>(Beaucoup de peine attend celui qui oublie que les produits de quaternion ne sont pas commutatifs)</em></p>
                 <p>Aprés avoir corrigé ça, le seul problème restant était que le personnage du joueur avait tendance à tourner en rond si la direction que le jeu considère comme “devant” change brusquement en plein déplacement (généralement au pôle sud d’une planète). Ce problème à été résolu en recalculant uniquement l’orientation relative à la caméra quand le joueur change drastiquement de direction.</p>
+                <img src="images/direction_bug.gif">
                 <p>Enfin il ne restait plus qu'à implémenter le fait de passer d’un champ gravitationnel à un autre ainsi que d’autre formes de champs gravitationnels comme les cubes et cylindres.</p>
+                <img src="images/cube_planet.gif">
                 <p>J’ai compris que trouver le sens d'attraction d’un point dans un champ gravitationnel non-sphérique revient généralement à trouver son point le plus proche dans le volume.</p>
+                <img src="images/diagram.jpg" style="width: 50%;">
                 <p>Le système de gizmo de Unity a permi de rendre ces champs gravitationnels visibles dans l’éditeur ce qui est pratique pour les parametrer.</p>
+                <p><img src="images/gizmo.gif" alt=""></p>
             </article>
 
             <article>
@@ -63,12 +67,16 @@
                 <p>J’ai fini par utiliser un système relativement simple mais qui permet d’assurer que le joueur reste clairement visible.</p>
                 <p>Ce système fonctionne en trois étapes.</p>
                 <p>La caméra se rapproche du personnage du joueur si elle est trop éloignée. Ensuite le jeu fait en sorte que la caméra soit toujours une certaine distance au-dessus de la tête du joueur (la définition de “au dessus” est dépendante du sens de la gravité bien sûr). Ainsi on garantit que la planète sur laquelle le personnage se trouve ne soit jamais entre lui et la caméra. Enfin il ne restait plus qu'à orienter la caméra vers le joueur et appliquer du smoothing au changement d’angle et de position pour avoir un système de caméra relativement solide même si assez simpliste.</p>
+                <img src="images/camera.gif">
                 <p>Pour améliorer le gamefeel j'ai ajouté un effet de particule à l'aterissage et une ombre projetée en dessous du joueur.</p>
+                <p><img src="images/polish.gif" alt=""></p>
             </article>
 
             <article>
                 <h3>3. Conclusion</h3>
                 <p>J’ai beaucoup appris grâce à ce projet. J’ai pu acquérir une bien meilleure compréhension de notions comme la gestion de collisions, les rotations en trois dimensions et l’Animation Controller de Unity. Je suis aussi très fier des problèmes que j’ai été capable résoudre par moi-même.</p>
+                <img style="width : 80%;" src="images/scenery.jpg" alt="">
+                <p class = "signature">- Erwan Campion</p>
             </article>
         </div>
     </body>
